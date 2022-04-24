@@ -144,10 +144,10 @@ const sum = (a, b) => {
     return a + b 
 } // this does not 
 
-// implicity return is just a sintax sugar for simplicity. 
+// implicity return is just a sintax sugar. 
 ~~~
 
-- Arrow functions have a lexical return
+- Arrow functions have a lexical scope
 - Arrow functions are sintax sugar for function expressions
 - Arrow functions are a ES6 feature 
 - Arrow function do not hoist
