@@ -3,7 +3,7 @@
 
 ### Closure
 
-A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, *a closure gives you access to an outer function's scope from an inner function*. In JavaScript, closures are created every time a function is created, at function creation time.
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, ___a closure gives you access to an outer function's scope from an inner function___. In JavaScript, closures are created every time a function is created, at function creation time.
 
 
 #### Lexical Scope:
@@ -38,7 +38,7 @@ myFunc();
 
 At first glance, it might seem unintuitive that this code still works. In some programming languages, the local variables within a function exist for just the duration of that function's execution. Once makeFunc() finishes executing, you might expect that the name variable would no longer be accessible. However, because the code still works as expected, this is obviously not the case in JavaScript.
 
-The reason is that *functions in JavaScript form closures*. A closure is the combination of a function and the lexical environment within which that function was declared. This environment consists of any local variables that were in-scope at the time the closure was created. In this case, myFunc is a reference to the instance of the function displayName that is created when makeFunc is run. The instance of displayName maintains a reference to its lexical environment, within which the variable name exists. For this reason, *when myFunc is invoked, the variable name remains available for use, and "Mozilla" is passed to console.log*.
+The reason is that ___functions in JavaScript form closures___. A closure is the combination of a function and the lexical environment within which that function was declared. This environment consists of any local variables that were in-scope at the time the closure was created. In this case, myFunc is a reference to the instance of the function displayName that is created when makeFunc is run. The instance of displayName maintains a reference to its lexical environment, within which the variable name exists. For this reason, ___when myFunc is invoked, the variable name remains available for use, and "Mozilla" is passed to console.log___.
 
 #### More complex closure example:
 
@@ -60,7 +60,7 @@ console.log(add10(2)); // ?
 ### Hoisting 
 
 When the JavaScript engine executes the JavaScript code, it creates the global execution context. The global execution context has two phases: creation and execution.
-During the creation phase, the *JavaScript engine moves the variable and function declarations to the top of your code*. This feature is known as hoisting in JavaScript.
+During the creation phase, the ___JavaScript engine moves the variable and function declarations to the top of your code___. This feature is known as hoisting in JavaScript.
 
 #### Variable hoisting
 
@@ -93,7 +93,7 @@ function addTwo(b) {
     return b + 2
 }
 ~~~
-In this example, *we called the addTwo() function before defining it* and the code still works. 
+In this example, ___we called the addTwo() function before defining it___ and the code still works. 
 
 #### Function Expressions 
 ~~~javascript
@@ -121,7 +121,7 @@ If add was an *arrow function* like
 ~~~javascript
 var add = (x, y) => x + y;
 ~~~
-The code also issues the same error as the function expression example because *arrow functions are syntactic sugar for defining function expressions*.
+The code also issues the same error as the function expression example because ___arrow functions are syntactic sugar for defining function expressions___.
 
 
 ### Arrow functions
